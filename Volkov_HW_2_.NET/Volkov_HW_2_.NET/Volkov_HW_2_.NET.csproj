@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8B960074-2CD3-40CA-B36A-F853BE9F62E5}</ProjectGuid>
+    <ProjectGuid>{B949602B-3BF9-40AD-8298-A5EF9D686BA9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Volkov_Lab_1_.NET</RootNamespace>
-    <AssemblyName>Volkov_Lab_1_.NET</AssemblyName>
+    <RootNamespace>Volkov_HW_2_.NET</RootNamespace>
+    <AssemblyName>Volkov_HW_2_.NET</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exercise.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

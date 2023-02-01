@@ -1,0 +1,16 @@
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_2_.NET\Volkov_HW_2_.NET\bin\Debug\Volkov_HW_2_.NET.exe.config
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_2_.NET\Volkov_HW_2_.NET\bin\Debug\Volkov_HW_2_.NET.exe
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_2_.NET\Volkov_HW_2_.NET\bin\Debug\Volkov_HW_2_.NET.pdb
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_2_.NET\Volkov_HW_2_.NET\obj\Debug\Volkov_HW_2_.NET.csproj.AssemblyReference.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_2_.NET\Volkov_HW_2_.NET\obj\Debug\Volkov_HW_2_.NET.csproj.SuggestedBindingRedirects.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_2_.NET\Volkov_HW_2_.NET\obj\Debug\Volkov_HW_2_.NET.csproj.CoreCompileInputs.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_2_.NET\Volkov_HW_2_.NET\obj\Debug\Volkov_HW_2_.NET.exe
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_2_.NET\Volkov_HW_2_.NET\obj\Debug\Volkov_HW_2_.NET.pdb
+D:\Projects\.NET\Volkov_HW_2_.NET\Volkov_HW_2_.NET\bin\Debug\Volkov_HW_2_.NET.exe.config
+D:\Projects\.NET\Volkov_HW_2_.NET\Volkov_HW_2_.NET\bin\Debug\Volkov_HW_2_.NET.exe
+D:\Projects\.NET\Volkov_HW_2_.NET\Volkov_HW_2_.NET\bin\Debug\Volkov_HW_2_.NET.pdb
+D:\Projects\.NET\Volkov_HW_2_.NET\Volkov_HW_2_.NET\obj\Debug\Volkov_HW_2_.NET.csproj.AssemblyReference.cache
+D:\Projects\.NET\Volkov_HW_2_.NET\Volkov_HW_2_.NET\obj\Debug\Volkov_HW_2_.NET.csproj.SuggestedBindingRedirects.cache
+D:\Projects\.NET\Volkov_HW_2_.NET\Volkov_HW_2_.NET\obj\Debug\Volkov_HW_2_.NET.csproj.CoreCompileInputs.cache
+D:\Projects\.NET\Volkov_HW_2_.NET\Volkov_HW_2_.NET\obj\Debug\Volkov_HW_2_.NET.exe
+D:\Projects\.NET\Volkov_HW_2_.NET\Volkov_HW_2_.NET\obj\Debug\Volkov_HW_2_.NET.pdb

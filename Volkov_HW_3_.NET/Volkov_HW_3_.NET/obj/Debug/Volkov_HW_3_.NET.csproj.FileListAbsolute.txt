@@ -1,0 +1,8 @@
+D:\.NET\Volkov_HW_3_.NET\Volkov_HW_3_.NET\bin\Debug\Volkov_HW_3_.NET.exe.config
+D:\.NET\Volkov_HW_3_.NET\Volkov_HW_3_.NET\bin\Debug\Volkov_HW_3_.NET.exe
+D:\.NET\Volkov_HW_3_.NET\Volkov_HW_3_.NET\bin\Debug\Volkov_HW_3_.NET.pdb
+D:\.NET\Volkov_HW_3_.NET\Volkov_HW_3_.NET\obj\Debug\Volkov_HW_3_.NET.csproj.AssemblyReference.cache
+D:\.NET\Volkov_HW_3_.NET\Volkov_HW_3_.NET\obj\Debug\Volkov_HW_3_.NET.csproj.SuggestedBindingRedirects.cache
+D:\.NET\Volkov_HW_3_.NET\Volkov_HW_3_.NET\obj\Debug\Volkov_HW_3_.NET.csproj.CoreCompileInputs.cache
+D:\.NET\Volkov_HW_3_.NET\Volkov_HW_3_.NET\obj\Debug\Volkov_HW_3_.NET.exe
+D:\.NET\Volkov_HW_3_.NET\Volkov_HW_3_.NET\obj\Debug\Volkov_HW_3_.NET.pdb

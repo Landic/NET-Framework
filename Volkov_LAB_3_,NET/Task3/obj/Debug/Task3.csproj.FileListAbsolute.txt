@@ -1,0 +1,8 @@
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task3\bin\Debug\Task3.exe.config
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task3\bin\Debug\Task3.exe
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task3\bin\Debug\Task3.pdb
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task3\obj\Debug\Task3.csproj.AssemblyReference.cache
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task3\obj\Debug\Task3.csproj.SuggestedBindingRedirects.cache
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task3\obj\Debug\Task3.csproj.CoreCompileInputs.cache
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task3\obj\Debug\Task3.exe
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task3\obj\Debug\Task3.pdb

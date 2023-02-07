@@ -1,0 +1,16 @@
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_7_NET\Volkov_HW_7_NET\bin\Debug\Volkov_HW_7_NET.exe.config
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_7_NET\Volkov_HW_7_NET\bin\Debug\Volkov_HW_7_NET.exe
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_7_NET\Volkov_HW_7_NET\bin\Debug\Volkov_HW_7_NET.pdb
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_7_NET\Volkov_HW_7_NET\obj\Debug\Volkov_HW_7_NET.csproj.AssemblyReference.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_7_NET\Volkov_HW_7_NET\obj\Debug\Volkov_HW_7_NET.csproj.SuggestedBindingRedirects.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_7_NET\Volkov_HW_7_NET\obj\Debug\Volkov_HW_7_NET.csproj.CoreCompileInputs.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_7_NET\Volkov_HW_7_NET\obj\Debug\Volkov_HW_7_NET.exe
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_7_NET\Volkov_HW_7_NET\obj\Debug\Volkov_HW_7_NET.pdb
+C:\Users\mrwol\OneDrive\Рабочий стол\Volkov_HW_7_NET\Volkov_HW_7_NET\bin\Debug\Volkov_HW_7_NET.exe.config
+C:\Users\mrwol\OneDrive\Рабочий стол\Volkov_HW_7_NET\Volkov_HW_7_NET\bin\Debug\Volkov_HW_7_NET.exe
+C:\Users\mrwol\OneDrive\Рабочий стол\Volkov_HW_7_NET\Volkov_HW_7_NET\bin\Debug\Volkov_HW_7_NET.pdb
+C:\Users\mrwol\OneDrive\Рабочий стол\Volkov_HW_7_NET\Volkov_HW_7_NET\obj\Debug\Volkov_HW_7_NET.csproj.AssemblyReference.cache
+C:\Users\mrwol\OneDrive\Рабочий стол\Volkov_HW_7_NET\Volkov_HW_7_NET\obj\Debug\Volkov_HW_7_NET.csproj.SuggestedBindingRedirects.cache
+C:\Users\mrwol\OneDrive\Рабочий стол\Volkov_HW_7_NET\Volkov_HW_7_NET\obj\Debug\Volkov_HW_7_NET.csproj.CoreCompileInputs.cache
+C:\Users\mrwol\OneDrive\Рабочий стол\Volkov_HW_7_NET\Volkov_HW_7_NET\obj\Debug\Volkov_HW_7_NET.exe
+C:\Users\mrwol\OneDrive\Рабочий стол\Volkov_HW_7_NET\Volkov_HW_7_NET\obj\Debug\Volkov_HW_7_NET.pdb

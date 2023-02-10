@@ -9,25 +9,25 @@ namespace Volkov_LAB_5_NET
     internal class Matrix
     {
         private int[,] arr;
+        private int rows;
+        private int cols;
 
         public Matrix()
         {
             arr = null;
+            rows = 0;
+            cols = 0;
         }
 
-        public Matrix(int[,] arr)
+        public Matrix(int rows, int cols)
         {
-            this.arr = arr;
+            this.rows = rows;
+            this.cols = cols;
+            arr = new int[rows,cols];
         }
 
         public void Input()
         {
-            int size1 = 0;
-            int size2 = 0;
-            Console.WriteLine("Enter size matrix");
-            size1 = Convert.ToInt32(Console.ReadLine());
-            size2 = Convert.ToInt32(Console.ReadLine());
-            arr = new int[size1, size2];
             Console.WriteLine("Enter element to the matrix");
             for (int i = 0; i < arr.GetLength(0); i++)
             {
@@ -75,15 +75,33 @@ namespace Volkov_LAB_5_NET
             return temp;
         }
 
-        public int[,] Arr
+        public int this[int r, int c]
         {
             get
             {
-                return arr;
+                if(r < 0 || r >= arr.GetLength(0))
+                {
+                    throw new Exception("Index error");
+                }
+                else if(c < 0 || c >= arr.GetLength(1))
+                {
+                    throw new Exception("Index error");
+                }
+                else
+                    return arr[r,c];
             }
             set 
             {
-                arr = value; 
+                if (r < 0 || r >= arr.GetLength(0))
+                {
+                    throw new Exception("Index error");
+                }
+                else if (c < 0 || c >= arr.GetLength(1))
+                {
+                    throw new Exception("Index error");
+                }
+                else
+                    arr[r,c] = value;
             }
         }
 

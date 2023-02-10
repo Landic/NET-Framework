@@ -60,7 +60,12 @@ namespace Volkov_LAB_5_NET
 
             /////////////////////////////////// TASK 2 //////////////////////////////////////
 
-            //Matrix obj = new Matrix();
+            Matrix obj = new Matrix(2, 2);
+            obj.Input();
+            Console.WriteLine(obj.ToString());
+            obj[0, 0] = 1;
+            Console.WriteLine(obj.ToString());
+            Console.WriteLine(obj[0,0]);
             //obj.Arr = new int[2, 2] { { 1, 2 }, { 1, 2 } };
             //Console.Write(obj.ToString());
             //Matrix obj2 = new Matrix();
@@ -126,48 +131,48 @@ namespace Volkov_LAB_5_NET
 
             /////////////////////////////////// TASK 4 //////////////////////////////////////
 
-            Credit_Card obj = new Credit_Card();
-            obj.Init();
-            Console.WriteLine(obj.ToString());
-            obj = obj + 2000;
-            Console.WriteLine(obj.ToString());
-            obj = obj - 1000;
-            Console.WriteLine(obj.ToString());
-            Credit_Card obj2 = new Credit_Card();
-            obj2.Init();
-            Console.WriteLine(obj2.ToString());
-            if (obj2 > obj)
-            {
-                Console.WriteLine("True");
-            }
-            else
-            {
-                Console.WriteLine("False");
-            }
-            if (obj2 < obj)
-            {
-                Console.WriteLine("True");
-            }
-            else
-            {
-                Console.WriteLine("False");
-            }
-            if (obj2 == obj)
-            {
-                Console.WriteLine("True");
-            }
-            else
-            {
-                Console.WriteLine("False");
-            }
-            if (obj2 != obj)
-            {
-                Console.WriteLine("True");
-            }
-            else
-            {
-                Console.WriteLine("False");
-            }
+            //Credit_Card obj = new Credit_Card();
+            //obj.Init();
+            //Console.WriteLine(obj.ToString());
+            //obj = obj + 2000;
+            //Console.WriteLine(obj.ToString());
+            //obj = obj - 1000;
+            //Console.WriteLine(obj.ToString());
+            //Credit_Card obj2 = new Credit_Card();
+            //obj2.Init();
+            //Console.WriteLine(obj2.ToString());
+            //if (obj2 > obj)
+            //{
+            //    Console.WriteLine("True");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("False");
+            //}
+            //if (obj2 < obj)
+            //{
+            //    Console.WriteLine("True");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("False");
+            //}
+            //if (obj2 == obj)
+            //{
+            //    Console.WriteLine("True");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("False");
+            //}
+            //if (obj2 != obj)
+            //{
+            //    Console.WriteLine("True");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("False");
+            //}
         }
     }
 }

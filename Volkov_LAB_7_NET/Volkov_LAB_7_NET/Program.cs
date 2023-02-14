@@ -44,11 +44,41 @@ namespace Volkov_LAB_7_NET
             obj2.Show();
         }
 
+        static void HWTask1()
+        {
+            ICalc obj = new MyArray(10);
+            Console.WriteLine(obj.Less(10));
+            Console.WriteLine(obj.Greater(10));
+        }
+
+        static void HWTask2()
+        {
+            IOutput2 obj = new MyArray(10);
+            obj.ShowEven();
+            Console.WriteLine();
+            obj.ShowOdd();
+        }
+
+        static void HWTask3()
+        {
+            ICalc2 obj = new MyArray(10);
+            Console.WriteLine(obj.CountDistinct());
+            Console.WriteLine(obj.EqualToValut(5));
+        }
+
         static void Main(string[] args)
         {
+            ////////////////// LAB //////////////
             //Task1();
             //Task2();
-            Task3();
+            //Task3();
+
+            //////////////// HW ////////////////
+
+
+            //HWTask1();
+            //HWTask2();
+            HWTask3();
         }
     }
 }

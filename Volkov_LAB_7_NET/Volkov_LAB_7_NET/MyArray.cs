@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Volkov_LAB_7_NET
 {
-    internal class MyArray : IOutput, IMath, ISort
+    internal class MyArray : IOutput, IMath, ISort, ICalc, IOutput2, ICalc2
     {
         private int[] arr;
 
@@ -21,10 +21,92 @@ namespace Volkov_LAB_7_NET
             Random rand = new Random();
             for (int i = 0; i < arr.Length; i++)
             {
-                arr[i] = rand.Next(10, 50);
+                arr[i] = rand.Next(1, 10);
             }
         }
 
+        ////////////////////////////////////// HW //////////////////////////
+        public int CountDistinct()   // HW
+        {
+            int count = 0, count2 = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                count2++;
+                for (int j = i + 1; j < arr.Length; j++)
+                {
+                    if (arr[j] == arr[i])
+                    {
+                        count++;
+                        break;
+                    }
+                }
+            }
+            return count2 - count;
+        }
+
+        public int EqualToValut(int valueToCompare) // HW
+        {
+            int count = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] == valueToCompare)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public int Greater(int valueToCompare) // HW
+        {
+            int count = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] < valueToCompare)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public int Less(int valueToCompare) // HW
+        {
+            int count = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] > valueToCompare)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        public void ShowEven() // HW
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] % 2 == 0)
+                {
+                    Console.WriteLine(arr[i] + "\t");
+                }
+            }
+        }
+
+        public void ShowOdd() // HW
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] % 2 != 0)
+                {
+                    Console.WriteLine(arr[i] + "\t");
+                }
+            }
+        }
+         
+        /////////////////////////////////////////////////////////
+        
         public float Avg()
         {
             int sum = 0;
@@ -35,6 +117,7 @@ namespace Volkov_LAB_7_NET
             sum = sum / arr.Length;
             return sum;
         }
+
 
         public int Max()
         {
@@ -83,6 +166,7 @@ namespace Volkov_LAB_7_NET
             foreach (int i in arr)
                 Console.WriteLine(i);
         }
+
 
         public void SortAsc()
         {

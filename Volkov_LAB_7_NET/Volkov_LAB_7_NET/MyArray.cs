@@ -44,7 +44,7 @@ namespace Volkov_LAB_7_NET
             return count2 - count;
         }
 
-        public int EqualToValut(int valueToCompare) // HW
+        public int EqualToValue(int valueToCompare) // HW
         {
             int count = 0;
             for (int i = 0; i < arr.Length; i++)

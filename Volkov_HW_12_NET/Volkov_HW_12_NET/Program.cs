@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Volkov_HW_10_NET
+namespace Volkov_HW_12_NET
 {
     internal class Program
     {
@@ -14,7 +14,7 @@ namespace Volkov_HW_10_NET
             obj[0] = new Book("g", "j", 2);
             obj[1] = new Book("a", "t", 3);
             obj[2] = new Book("w", "a", 5);
-            foreach(Book book in obj)
+            foreach (Book book in obj)
             {
                 Console.WriteLine(book);
             }
@@ -32,18 +32,17 @@ namespace Volkov_HW_10_NET
             }
             Console.WriteLine("------------------------------------");
             Array.Sort(obj);
-            foreach(Book book in obj)
+            foreach (Book book in obj)
             {
                 Console.WriteLine(book);
             }
             Console.WriteLine("------------------------------------");
             Book obj2 = obj[0];
             Console.WriteLine(obj2);
-            List_Book obj5 = new List_Book(obj);
-            Console.WriteLine("------------------------------------");
-            foreach (List_Book i in obj5)
+            Library obj5 = new Library(obj);
+            Console.WriteLine("-----------------LIBRARY-------------------");
+            foreach (Book i in obj5)
                 Console.WriteLine(i);
-
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,10 @@ namespace Volkov_HW_10_NET
         public List_Book(int size) 
         {
             obj = new Book[size];
+            for (int i = 0; i < size; i++)
+            {
+                obj[i] = new Book();
+            }
         }
 
         public List_Book(Book[] arr)
@@ -25,7 +30,7 @@ namespace Volkov_HW_10_NET
             obj = new Book[arr.Length];
             for (short i = 0; i < arr.Length; i++)
             {
-                obj[i] = arr[i];
+                obj[i] = new Book(arr[i].Name, arr[i].Autor, arr[i].Pages);
             }
         }
         public void Add(Book obj2)
@@ -48,6 +53,12 @@ namespace Volkov_HW_10_NET
             if (obj2.Name == find)
                 return true;
             return false;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            foreach (Book i in obj)
+                yield return i;
         }
 
         public Book this[int i]

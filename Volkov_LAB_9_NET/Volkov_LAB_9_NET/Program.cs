@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,17 +47,24 @@ namespace Volkov_LAB_9_NET
 
         private delegate int Arithmetic();
 
+        private delegate bool Arithmetic2(int a);
+
+
+        static void Func(int a, Arithmetic2 ptr)
+        {
+            if(ptr(a) == true)
+            {
+                Console.WriteLine("True");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }
+        }
 
         public struct ArithmeticOperations2
         {
-            private int a;
-
-            public ArithmeticOperations2(int a)
-            {
-                this.a = a;
-            }
-
-            public bool Even()
+            public bool Even(int a)
             {
                 if(a % 2 == 0)
                 {
@@ -65,7 +73,7 @@ namespace Volkov_LAB_9_NET
                 return false;
             }
 
-            public bool NotEven()
+            public bool NotEven(int a)
             {
                 if (a % 2 == 1)
                 {
@@ -74,7 +82,7 @@ namespace Volkov_LAB_9_NET
                 return false;
             }
 
-            public bool JustANumber()
+            public bool JustANumber(int a)
             {
                 for (int i = 2; i < a; i++)
                 {
@@ -84,7 +92,7 @@ namespace Volkov_LAB_9_NET
                 return true;
             }
 
-            public bool FibonacciNumber()
+            public bool FibonacciNumber(int a)
             {
                 int x, y, z, q = 0;
                 y = z = x = 1;
@@ -106,8 +114,6 @@ namespace Volkov_LAB_9_NET
             }
         }
 
-        private delegate bool Arithmetic2();
-
         static void Main(string[] args)
         {
             #region task1
@@ -128,22 +134,11 @@ namespace Volkov_LAB_9_NET
             #endregion
 
             #region task3
-            ArithmeticOperations2 obj = new ArithmeticOperations2(2);
-            Arithmetic2 del = new Arithmetic2(obj.Even);
-            del += obj.NotEven;
-            del += obj.JustANumber;
-            del += obj.FibonacciNumber;
-            foreach (Arithmetic2 i in del.GetInvocationList())
-            {
-                if(i.Invoke() == true)
-                {
-                    Console.WriteLine("True");
-                }
-                else
-                {
-                    Console.WriteLine("False");
-                }
-            }
+            ArithmeticOperations2 obj = new ArithmeticOperations2();
+            Func(2, obj.Even);
+            Func(2, obj.NotEven);
+            Func(2, obj.FibonacciNumber);
+            Func(2, obj.JustANumber);
             #endregion
         }
     }

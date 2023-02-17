@@ -1,0 +1,8 @@
+D:\Projects\.NET\Volkov_LAB_9_NET\Volkov_LAB_9_NET\bin\Debug\Volkov_LAB_9_NET.exe.config
+D:\Projects\.NET\Volkov_LAB_9_NET\Volkov_LAB_9_NET\bin\Debug\Volkov_LAB_9_NET.exe
+D:\Projects\.NET\Volkov_LAB_9_NET\Volkov_LAB_9_NET\bin\Debug\Volkov_LAB_9_NET.pdb
+D:\Projects\.NET\Volkov_LAB_9_NET\Volkov_LAB_9_NET\obj\Debug\Volkov_LAB_9_NET.csproj.AssemblyReference.cache
+D:\Projects\.NET\Volkov_LAB_9_NET\Volkov_LAB_9_NET\obj\Debug\Volkov_LAB_9_NET.csproj.SuggestedBindingRedirects.cache
+D:\Projects\.NET\Volkov_LAB_9_NET\Volkov_LAB_9_NET\obj\Debug\Volkov_LAB_9_NET.csproj.CoreCompileInputs.cache
+D:\Projects\.NET\Volkov_LAB_9_NET\Volkov_LAB_9_NET\obj\Debug\Volkov_LAB_9_NET.exe
+D:\Projects\.NET\Volkov_LAB_9_NET\Volkov_LAB_9_NET\obj\Debug\Volkov_LAB_9_NET.pdb

@@ -10,19 +10,21 @@ namespace Volkov_HW_17_NET
     internal class ATM
     {
         Card obj;
+        double summATM;
 
         public ATM()
         {
             obj = new Card();
         }
-        public ATM(Card obj)
+        public ATM(Card obj, double summATM)
         {
             this.obj = obj;
+            this.summATM = summATM;
         }
 
-        public void Valut(IValut valut)
+        public void Valut(IValut valut, ATM obj, Card obj2)
         {
-            valut.TypeValut();
+            valut.TypeValut(obj, obj2);
         }
 
         public void Check(ICheck check)
@@ -42,5 +44,15 @@ namespace Volkov_HW_17_NET
             obj.SCard -= int.Parse(Console.ReadLine());
         }
 
+        public void BalanceATM()
+        {
+            Console.WriteLine("Balance ATM -> " + summATM);
+        }
+
+        public double SummATM
+        {
+            get { return summATM; }
+            set { summATM = value; }
+        }
     }
 }

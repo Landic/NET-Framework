@@ -8,6 +8,6 @@ namespace Volkov_HW_17_NET
 {
     internal interface IValut
     {
-        void TypeValut();
+        void TypeValut(ATM obj, Card obj2);
     }
 }

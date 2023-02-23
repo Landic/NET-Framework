@@ -9,7 +9,7 @@ namespace Volkov_HW_17_NET
 {
     internal class Card
     {
-        public int SCard
+        public double SCard
         {
             get; set;
         }
@@ -19,7 +19,7 @@ namespace Volkov_HW_17_NET
             SCard = 0;
         }
 
-        public Card(int card)
+        public Card(double card)
         {
             SCard = card;
         }

@@ -25,23 +25,23 @@ namespace Volkov_HW_26_NET
 
             var result = list.Except(list2, new Sort());
 
-            foreach(var i in result)
+            foreach (var i in result)
             {
                 Console.WriteLine(i);
             }
-            Console.WriteLine();
-            var result2 = list.Intersect(list2, new Sort());
-            foreach(var i in result2)
-            {
-                Console.WriteLine(i);
-            }
-            Console.WriteLine();
-            var result3 = list.Union(list2, new Sort());
+            //Console.WriteLine();
+            //var result2 = list.Intersect(list2, new Sort());
+            //foreach (var i in result2)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //Console.WriteLine();
+            //var result3 = list.Union(list2, new Sort());
 
-            foreach(var i in result3)
-            {
-                Console.WriteLine(i);
-            }
+            //foreach (var i in result3)
+            //{
+            //    Console.WriteLine(i);
+            //}
         }
 
         public class Sort : IEqualityComparer<Device>

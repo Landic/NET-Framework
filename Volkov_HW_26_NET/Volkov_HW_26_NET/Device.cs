@@ -1,22 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Volkov_HW_26_NET
 {
-    internal class Device
+    [Serializable]
+    [DataContract]
+    public sealed class Device
     {
+        [DataMember]
         public string Name { get; set; }
+        [DataMember]
         public string Firm { get; set; }
+        [DataMember]
         public double Price { get; set; }
+
 
         public Device()
         {
-            Name = string.Empty;
-            Firm = string.Empty;
-            Price = 0;
         }
 
         public Device(string name, string firm, double price)

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,31 +11,37 @@ namespace Volkov_Exam_Project_NET
 {
     internal class MyDictionary
     {
-        List<Word> words;
+        public string Type { get; set; }
 
-        public MyDictionary(IType type, List<Word> words)
+        public Dictionary<string, List<string>> dictionary { get; set; }
+
+        public MyDictionary(IType type)
         {
-            type.Type();
-            words = new List<Word>();
+            Type = type.Type();
+            dictionary = new Dictionary<string, List<string>>();
         }
 
-        public void Add2()
+        public void AddDictionary()
         {
-            Console.Write("Введите слово: ");
-            string term = Console.ReadLine();
+            Console.WriteLine("Enter word");
+            string word = Console.ReadLine();
+            Console.WriteLine("Enter translation");
+            string translation1 = Console.ReadLine();
+            string[] translation2 = translation1.Split(' ');
+            List<string> list = new List<string>(translation2.Select(t => t.Trim()));
+            dictionary.Add(word, list);
+        }
 
-            Console.Write("Введите переводы через запятую: ");
-            string[] translationsArray = Console.ReadLine().Split(',');
-            List<string> translations = new List<string>(translationsArray.Select(t => t.Trim()));
-
-            Word word = new Word(term, translations);
+        public void GetAllDictionary()
+        {
+            Console.WriteLine($"Dictionary - count word {dictionary.Keys.Count}, type - {Type}");
         }
 
         public void Output()
         {
-            foreach (Word word in words)
+            foreach (KeyValuePair<string, List<string>> i in dictionary)
             {
-                Console.WriteLine(word);
+                Console.WriteLine($"{i.Key} - {string.Join(" ", i.Value)}");
             }
         }
     }

@@ -10,7 +10,7 @@ namespace Volkov_Exam_Project_NET
     {
         public string Type()
         {
-            throw new NotImplementedException();
+            return "RU-ENG";
         }
     }
 }

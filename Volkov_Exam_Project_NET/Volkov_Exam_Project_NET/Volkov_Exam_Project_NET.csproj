@@ -44,13 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EngRus.cs" />
+    <Compile Include="Find.cs" />
+    <Compile Include="IRemove.cs" />
+    <Compile Include="IReplace.cs" />
     <Compile Include="IType.cs" />
+    <Compile Include="LoadXML.cs" />
+    <Compile Include="Menu.cs" />
     <Compile Include="MyDictionary.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RemoveWordInDictionary.cs" />
     <Compile Include="RusEng.cs" />
-    <Compile Include="Word.cs" />
+    <Compile Include="SaveXML.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

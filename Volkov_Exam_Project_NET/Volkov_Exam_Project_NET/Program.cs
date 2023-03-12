@@ -10,10 +10,8 @@ namespace Volkov_Exam_Project_NET
     {
         static void Main(string[] args)
         {
-            List<Word> obj2 = new List<Word>();
-            MyDictionary obj = new MyDictionary(new EngRus(),obj2);
-            obj.Add2();
-            obj.Output();
+            Menu menu = new Menu();
+            menu.RunMenu();
         }
     }
 }

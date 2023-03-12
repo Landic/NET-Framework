@@ -10,8 +10,7 @@ namespace Volkov_Exam_Project_NET
     {
         public string Type()
         {
-            Console.WriteLine("ОК");
-            return null;
+            return "ENG-RU";
         }
     }
 }

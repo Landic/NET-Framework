@@ -11,8 +11,9 @@ namespace Volkov_Exam_Project_NET
     {
         int choose, item;
         List<MyDictionary> list;
-        IReplace obj1;
-        IRemove obj2;
+        IReplace obj1; 
+        IRemove obj2; 
+        IAdd obj3;
 
 
         public Menu()
@@ -22,9 +23,10 @@ namespace Volkov_Exam_Project_NET
             list = new List<MyDictionary>();
             obj1 = null;
             obj2 = null;
+            obj3 = null;
         }
 
-        public void RunMenu()
+        public void RunMenu() // запуск меню
         {
             while (true)
             {
@@ -72,28 +74,20 @@ namespace Volkov_Exam_Project_NET
                         {
                             list.Add(new MyDictionary(new RusEng()));
                         }
-                        else
+                        else // если пользователь ввел не верно будет исключение 
                         {
+                            Console.Clear();
                             Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(" --------------" +
-                                              "\n| No such item |" +
-                                              "\n --------------");
-                            Console.ResetColor();
-                            continue;
+                            throw new Exception("There is no such item!");
                         }
                         Console.Clear();
                         continue;
                     case 2:
-                        if (list.Count == 0)
+                        if (list.Count == 0) // если словари не созданы будет исключение
                         {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(" --------------------------" +
-                                              "\n| Error! Create dictionary |" +
-                                              "\n --------------------------");
-                            Thread.Sleep(1000);
-                            Console.ResetColor();
                             Console.Clear();
-                            continue;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            throw new Exception("Error! You have not created a dictionary!");
                         }
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.WriteLine(" -----------------" +
@@ -106,36 +100,48 @@ namespace Volkov_Exam_Project_NET
                         item = int.Parse(Console.ReadLine()) - 1;
                         Console.Clear();
                         Console.ResetColor();
-                        if (item + 1 > list.Count)
+                        if (item + 1 > list.Count) // если пользователь выбрал словарь который не существует исключение
                         {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(" -------" +
-                                              "\n| Error |" +
-                                              "\n -------");
-                            Thread.Sleep(1000);
-                            Console.ResetColor();
                             Console.Clear();
-                            continue;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            throw new Exception("Error! Such a dictionary does not exist!");
                         }
                         else
                         {
                             Console.ForegroundColor = ConsoleColor.Blue;
-                            list[item].AddDictionary();
+                            Console.WriteLine(" --------------------------------" +
+                                              "\n| 1. Add word and translation    |" +
+                                              "\n|--------------------------------|" +
+                                              "\n| 2. Add translation to the word |" +
+                                              "\n --------------------------------");
+                            choose = int.Parse(Console.ReadLine());
+                            Console.Clear();
+                            if(choose == 1)
+                            {
+                                obj3 = new AddWord();
+                                obj3.MyAdd(list[item]);
+                            }
+                            else if(choose == 2)
+                            {
+                                obj3 = new AddNewTranslation();
+                                obj3.MyAdd(list[item]);
+                            }
+                            else // если пользователь ввел не верно будет исключение 
+                            {
+                                Console.Clear();
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                throw new Exception("There is no such item!");
+                            }
                             Console.Clear();
                             Console.ResetColor();
                         }
                         continue;
                     case 3:
-                        if (list.Count == 0)
+                        if (list.Count == 0)// если словари не созданы будет исключение
                         {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(" --------------------------" +
-                                              "\n| Error! Create dictionary |" +
-                                              "\n --------------------------");
-                            Thread.Sleep(1000);
-                            Console.ResetColor();
                             Console.Clear();
-                            continue;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            throw new Exception("Error! You have not created a dictionary!");
                         }
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.WriteLine(" -----------------" +
@@ -148,16 +154,11 @@ namespace Volkov_Exam_Project_NET
                         item = int.Parse(Console.ReadLine()) - 1;
                         Console.Clear();
                         Console.ResetColor();
-                        if (item + 1 > list.Count)
+                        if (item + 1 > list.Count) // если пользователь выбрал словарь который не существует исключение
                         {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(" -------" +
-                                              "\n| Error |" +
-                                              "\n -------");
-                            Thread.Sleep(1000);
-                            Console.ResetColor();
                             Console.Clear();
-                            continue;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            throw new Exception("Error! Such a dictionary does not exist!");
                         }
                         else
                         {
@@ -175,26 +176,27 @@ namespace Volkov_Exam_Project_NET
                                 obj1.MyReplace(list[item]);
                                 Console.Clear();
                             }
-                            else
+                            else if(choose == 2)
                             {
                                 obj1 = new ReplaceTranslation();
                                 obj1.MyReplace(list[item]);
                                 Console.Clear();
                             }
+                            else // если пользователь ввел не верно будет исключение 
+                            {
+                                Console.Clear();
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                throw new Exception("There is no such item!");
+                            }
                             Console.ResetColor();
                         }
                         continue;
                     case 4:
-                        if (list.Count == 0)
+                        if (list.Count == 0) // если словари не созданы будет исключение
                         {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(" --------------------------" +
-                                              "\n| Error! Create dictionary |" +
-                                              "\n --------------------------");
-                            Thread.Sleep(1000);
-                            Console.ResetColor();
                             Console.Clear();
-                            continue;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            throw new Exception("Error! You have not created a dictionary!");
                         }
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.WriteLine(" -----------------" +
@@ -207,17 +209,11 @@ namespace Volkov_Exam_Project_NET
                         item = int.Parse(Console.ReadLine()) - 1;
                         Console.Clear();
                         Console.ResetColor();
-                        if (item + 1 > list.Count)
+                        if (item + 1 > list.Count) // если пользователь выбрал словарь который не существует исключение
                         {
-
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(" -------" +
-                                              "\n| Error |" +
-                                              "\n -------");
-                            Thread.Sleep(1000);
-                            Console.ResetColor();
                             Console.Clear();
-                            continue;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            throw new Exception("Error! Such a dictionary does not exist!");
                         }
                         else
                         {
@@ -235,26 +231,27 @@ namespace Volkov_Exam_Project_NET
                                 obj2.MyRemove(list[item]);
                                 Console.Clear();
                             }
-                            else
+                            else if(choose == 2)
                             {
                                 obj2 = new RemoveTranslation();
                                 obj2.MyRemove(list[item]);
                                 Console.Clear();
                             }
+                            else // если пользователь ввел не верно будет исключение 
+                            {
+                                Console.Clear();
+                                Console.ForegroundColor = ConsoleColor.Red;
+                                throw new Exception("There is no such item!");
+                            }
                             Console.ResetColor();
                         }
                         continue;
                     case 5:
-                        if (list.Count == 0)
+                        if (list.Count == 0) // если словари не созданы будет исключение
                         {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(" --------------------------" +
-                                              "\n| Error! Create dictionary |" +
-                                              "\n --------------------------");
-                            Thread.Sleep(1000);
-                            Console.ResetColor();
                             Console.Clear();
-                            continue;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            throw new Exception("Error! You have not created a dictionary!");
                         }
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.WriteLine(" ----------------\n" +
@@ -270,16 +267,11 @@ namespace Volkov_Exam_Project_NET
                         Console.ResetColor();
                         continue;
                     case 6:
-                        if (list.Count == 0)
+                        if (list.Count == 0) // если словари не созданы будет исключение
                         {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(" --------------------------" +
-                                              "\n| Error! Create dictionary |" +
-                                              "\n --------------------------");
-                            Thread.Sleep(1000);
-                            Console.ResetColor();
                             Console.Clear();
-                            continue;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            throw new Exception("Error! You have not created a dictionary!");
                         }
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.WriteLine(" -----------------" +
@@ -292,16 +284,11 @@ namespace Volkov_Exam_Project_NET
                         item = int.Parse(Console.ReadLine()) - 1;
                         Console.Clear();
                         Console.ResetColor();
-                        if (item + 1 > list.Count)
+                        if (item + 1 > list.Count) // если пользователь выбрал словарь который не существует исключение
                         {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(" -------" +
-                                              "\n| Error |" +
-                                              "\n -------");
-                            Thread.Sleep(1000);
-                            Console.ResetColor();
                             Console.Clear();
-                            continue;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            throw new Exception("Error! Such a dictionary does not exist!");
                         }
                         else
                         {
@@ -313,16 +300,11 @@ namespace Volkov_Exam_Project_NET
                         }
                         continue;
                     case 7:
-                        if (list.Count == 0)
+                        if (list.Count == 0) // если словари не созданы будет исключение
                         {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(" --------------------------" +
-                                              "\n| Error! Create dictionary |" +
-                                              "\n --------------------------");
-                            Thread.Sleep(1000);
-                            Console.ResetColor();
                             Console.Clear();
-                            continue;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            throw new Exception("Error! You have not created a dictionary!");
                         }
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.WriteLine(" -----------------" +
@@ -335,16 +317,11 @@ namespace Volkov_Exam_Project_NET
                         item = int.Parse(Console.ReadLine()) - 1;
                         Console.Clear();
                         Console.ResetColor();
-                        if (item + 1 > list.Count)
+                        if (item + 1 > list.Count) // если пользователь выбрал словарь который не существует исключение
                         {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(" -------" +
-                                              "\n| Error |" +
-                                              "\n -------");
-                            Thread.Sleep(1000);
-                            Console.ResetColor();
                             Console.Clear();
-                            continue;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            throw new Exception("Error! Such a dictionary does not exist!");
                         }
                         else
                         {
@@ -356,16 +333,11 @@ namespace Volkov_Exam_Project_NET
                         }
                         continue;
                     case 8:
-                        if (list.Count == 0)
+                        if (list.Count == 0) // если словари не созданы будет исключение
                         {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(" --------------------------" +
-                                              "\n| Error! Create dictionary |" +
-                                              "\n --------------------------");
-                            Thread.Sleep(1000);
-                            Console.ResetColor();
                             Console.Clear();
-                            continue;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            throw new Exception("Error! You have not created a dictionary!");
                         }
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.WriteLine(" -----------------" +
@@ -378,16 +350,11 @@ namespace Volkov_Exam_Project_NET
                         item = int.Parse(Console.ReadLine()) - 1;
                         Console.Clear();
                         Console.ResetColor();
-                        if (item + 1 > list.Count)
+                        if (item + 1 > list.Count) // если пользователь выбрал словарь который не существует исключение
                         {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine(" -------" +
-                                              "\n| Error |" +
-                                              "\n -------");
-                            Thread.Sleep(1000);
-                            Console.ResetColor();
                             Console.Clear();
-                            continue;
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            throw new Exception("Error! Such a dictionary does not exist!");
                         }
                         else
                         {
@@ -402,7 +369,7 @@ namespace Volkov_Exam_Project_NET
                             Console.ResetColor();
                         }
                         continue;
-                    case 9:
+                    case 9: // выход
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.WriteLine(" ---------\n" +
                                           "| Exit... |\n" +
@@ -411,15 +378,10 @@ namespace Volkov_Exam_Project_NET
                         Console.ResetColor();
                         Console.Clear();
                         break;
-                    default:
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine(" --------------" +
-                                          "\n| No such item |" +
-                                          "\n --------------");
-                        Thread.Sleep(500);
+                    default: // если пользователь ввел не существующий пункт в меню то ошибка
                         Console.Clear();
-                        Console.ResetColor();
-                        continue;
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        throw new Exception("There is no such item!");
                 }
                 break;
             }

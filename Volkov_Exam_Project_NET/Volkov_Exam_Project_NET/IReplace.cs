@@ -21,20 +21,18 @@ namespace Volkov_Exam_Project_NET
             string wordreplace = Console.ReadLine();
             Console.WriteLine("Enter a new word");
             string wordnew = Console.ReadLine();
-            if (dict.dictionary.ContainsKey(wordreplace))
+            if (dict.dictionary.ContainsKey(wordreplace)) // ищем слово если находит срабатывает тело проверки
             {
-                List<string> value = dict.dictionary[wordreplace];
-                dict.dictionary.Remove(wordreplace);
-                dict.dictionary.Add(wordnew, value);
+                List<string> value = dict.dictionary[wordreplace]; // сохраняем переводы в отдельный лист
+                dict.dictionary.Remove(wordreplace); // удаляем старое слово
+                dict.dictionary.Add(wordnew, value); // добавляем новое и к нему переводы которые мы сохранили
+
             }
-            else
+            else // если слово не найдено вылазит исключение
             {
+                Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine(" -----------------------\n" +
-                                  "| There is no such word |\n" +
-                                  " -----------------------");
-                Thread.Sleep(500);
-                Console.ResetColor();
+                throw new Exception("There is no such word");
             }
         }
     }
@@ -48,14 +46,20 @@ namespace Volkov_Exam_Project_NET
             Console.WriteLine("Enter translation to replace");
             string translation = Console.ReadLine();
             Console.WriteLine("Enter new translation");
-            string newtranslation = Console.ReadLine();
-            List<string> translation2 = dict.dictionary[key];
-            int index = translation2.IndexOf(translation);
-            if (index >= 0)
+            string newtranslation = Console.ReadLine(); 
+            List<string> translation2 = dict.dictionary[key]; // получаем список переводов
+            int index = translation2.IndexOf(translation); // находим индекс перевода
+            if (index >= 0) // если больше или равно нулю то срабатывает код в теле проверки
             {
-                translation2[index] = newtranslation;
+                translation2[index] = newtranslation; // замена текущего перевода на новый
+                dict.dictionary[key] = translation2; // обновляем список переводов
             }
-            dict.dictionary[key] = translation2;
+            else // если меньше нуля то есть не найден перевод то исключение
+            {
+                Console.Clear();
+                Console.ForegroundColor= ConsoleColor.Red;
+                throw new Exception("Translation not found!");
+            }
         }
     }
 }

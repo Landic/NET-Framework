@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="EngRus.cs" />
     <Compile Include="Find.cs" />
+    <Compile Include="IAdd.cs" />
     <Compile Include="IRemove.cs" />
     <Compile Include="IReplace.cs" />
     <Compile Include="IType.cs" />

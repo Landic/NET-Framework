@@ -14,22 +14,16 @@ namespace Volkov_Exam_Project_NET
         {
             Console.WriteLine("Enter word for translation");
             string word = Console.ReadLine();
-            foreach (KeyValuePair<string, List<string>> i in dict.dictionary)
+            foreach (KeyValuePair<string, List<string>> i in dict.dictionary) // foreach для перебора
             {
-                if (i.Key == word)
+                if (i.Key == word) // ищет по ключу если такой ключ есть то выводит перевод
                 {
                     Console.WriteLine($"{i.Key} - {string.Join(" ", i.Value)}");
-                }
-                else
-                {
-                    Console.ForegroundColor= ConsoleColor.Red;
-                    Console.WriteLine(" ----------------\n" +
-                                      "| No translation |\n" +
-                                      " ----------------");
-                    Console.ResetColor();
-                    Thread.Sleep(500);
+                    return; 
                 }
             }
+            Console.ForegroundColor = ConsoleColor.Red; 
+            throw new Exception("Not found");// исключение если слово не найдено
         }   
     }
 }

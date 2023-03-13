@@ -8,7 +8,7 @@ namespace Volkov_Exam_Project_NET
 {
     internal class EngRus : IType
     {
-        public string Type()
+        public string Type() // возвращает тип словаря
         {
             return "ENG-RU";
         }

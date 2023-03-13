@@ -18,13 +18,13 @@ namespace Volkov_Exam_Project_NET
             XDocument document = XDocument.Load(filename + ".xml");
             foreach (XElement i in document.Root.Elements())
             {
-                string key = i.Attribute("word").Value;
-                List<string> temp = new List<string>();
-                foreach(XElement j in i.Elements())
+                string key = i.Attribute("word").Value; // находит слово по атрибуту word и записывает в ключ
+                List<string> temp = new List<string>(); // создаем лист который будет хранить переводы
+                foreach(XElement j in i.Elements()) // перебор переводов
                 {
-                    temp.Add(j.Value);
+                    temp.Add(j.Value); // добавление переводов в лист 
                 }
-                dict.dictionary.Add(key, temp);
+                dict.dictionary.Add(key, temp); // добавляем в словарь
             }
         }
     }

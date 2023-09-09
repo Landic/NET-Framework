@@ -1,0 +1,8 @@
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Volkov_LAB_3_,NET\obj\Debug\Task1.csproj.AssemblyReference.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Volkov_LAB_3_,NET\obj\Debug\Task1.csproj.SuggestedBindingRedirects.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Volkov_LAB_3_,NET\obj\Debug\Task1.csproj.CoreCompileInputs.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Volkov_LAB_3_,NET\bin\Debug\Volkov_LAB_3_,NET.exe.config
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Volkov_LAB_3_,NET\bin\Debug\Volkov_LAB_3_,NET.exe
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Volkov_LAB_3_,NET\bin\Debug\Volkov_LAB_3_,NET.pdb
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Volkov_LAB_3_,NET\obj\Debug\Volkov_LAB_3_,NET.exe
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Volkov_LAB_3_,NET\obj\Debug\Volkov_LAB_3_,NET.pdb

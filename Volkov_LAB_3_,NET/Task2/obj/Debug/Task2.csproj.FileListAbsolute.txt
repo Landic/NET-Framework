@@ -1,0 +1,16 @@
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Task1\bin\Debug\Task1.exe.config
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Task1\bin\Debug\Task1.exe
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Task1\bin\Debug\Task1.pdb
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Task1\obj\Debug\Task2.csproj.AssemblyReference.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Task1\obj\Debug\Task2.csproj.SuggestedBindingRedirects.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Task1\obj\Debug\Task2.csproj.CoreCompileInputs.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Task1\obj\Debug\Task1.exe
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_LAB_3_,NET\Task1\obj\Debug\Task1.pdb
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task2\bin\Debug\Task1.exe.config
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task2\bin\Debug\Task1.exe
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task2\bin\Debug\Task1.pdb
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task2\obj\Debug\Task2.csproj.AssemblyReference.cache
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task2\obj\Debug\Task2.csproj.SuggestedBindingRedirects.cache
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task2\obj\Debug\Task2.csproj.CoreCompileInputs.cache
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task2\obj\Debug\Task1.exe
+D:\Projects\.NET\Volkov_LAB_3_,NET\Task2\obj\Debug\Task1.pdb

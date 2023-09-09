@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Product_Purchase>
+	<name>Milk</name>
+	<price>39,5</price>
+	<data>06.03.2023</data>
+	<name>Red caviar</name>
+	<price>250</price>
+	<data>06.03.2023</data>
+	<name>Black caviar</name>
+	<price>5000</price>
+	<data>05.03.2023</data>
+</Product_Purchase>

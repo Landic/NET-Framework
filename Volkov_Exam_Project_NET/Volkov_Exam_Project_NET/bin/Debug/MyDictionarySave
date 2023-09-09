@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dictionary>
+  <ENG word="Car">
+    <RU>Машина</RU>
+  </ENG>
+  <ENG word="Train">
+    <RU>Поезд</RU>
+  </ENG>
+  <ENG word="Producer">
+    <RU>Производитель</RU>
+    <RU>Режиссер</RU>
+    <RU>Продюсер</RU>
+  </ENG>
+</Dictionary>

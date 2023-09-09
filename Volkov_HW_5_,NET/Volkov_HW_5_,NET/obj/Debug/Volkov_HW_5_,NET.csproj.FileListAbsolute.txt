@@ -1,0 +1,8 @@
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_5_,NET\Volkov_HW_5_,NET\obj\Debug\Volkov_HW_5_,NET.csproj.AssemblyReference.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_5_,NET\Volkov_HW_5_,NET\obj\Debug\Volkov_HW_5_,NET.csproj.SuggestedBindingRedirects.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_5_,NET\Volkov_HW_5_,NET\obj\Debug\Volkov_HW_5_,NET.csproj.CoreCompileInputs.cache
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_5_,NET\Volkov_HW_5_,NET\bin\Debug\Volkov_HW_5_,NET.exe.config
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_5_,NET\Volkov_HW_5_,NET\bin\Debug\Volkov_HW_5_,NET.exe
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_5_,NET\Volkov_HW_5_,NET\bin\Debug\Volkov_HW_5_,NET.pdb
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_5_,NET\Volkov_HW_5_,NET\obj\Debug\Volkov_HW_5_,NET.exe
+C:\Users\landi\OneDrive\Робочий стіл\Volkov_HW_5_,NET\Volkov_HW_5_,NET\obj\Debug\Volkov_HW_5_,NET.pdb
